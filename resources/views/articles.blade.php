@@ -19,7 +19,6 @@
                                 <th>Câmbio</th>
                                 <th>Km</th>
                                 <th>Valor</th>
-                                <th>Criado à</th>
                                 <th class="text-center">Ações</th>
                             </tr>
                             </thead>
@@ -42,8 +41,7 @@
                                     <td>{{ $article->exchange }}</td>
                                     <td>{{ $article->mileage }}</td>
                                     <td>{{ $article->price }}</td>
-                                    <td style="width:100px">{{ $article->created_at->diffForHumans()}}
-                                    </td>
+
                                     <td style="width:145px"><a href="/articles/{{$article->id}}/edit"
                                                                class="btn btn-warning btn-sm"> <span class="glyphicon glyphicon-pencil"></span></a>
                                         <a class="btn btn-danger btn-sm" href="/articles/{{ $article->id }}/delete"

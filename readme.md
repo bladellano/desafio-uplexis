@@ -20,7 +20,7 @@ C:\xampp\htdocs
 C:\xampp\htdocs\app\ composer install
 ```
 
-* Criar uma base de dados. Configurar o arquivo `.env` que está na raiz do aplicação, conforme suas credenciais.
+* Criar uma base de dados. Renomear o arquivo `.env.example` para `.env` que está na raiz do aplicação, e configurar conforme suas credenciais.
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -29,11 +29,19 @@ DB_DATABASE=db_uplexis
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
-* Executar o comando a baixo
+* Executar o comando a baixo para criar as tabelas.
 ```
 C:\xampp\htdocs\app\ php artisan migrate
 ```
-* Para executar a aplicação, execute o comando:
+* Executar o comando a baixo para adicionar um usuário.
+```
+C:\xampp\htdocs\app\ php artisan db:seed
+```
+* Executar o comando a baixo para gerar uma key para aplicação.
+```
+C:\xampp\htdocs\app\ php artisan key:generate
+```
+* E por último para executar a aplicação, execute o comando.
 ```bash
 C:\xampp\htdocs\app\ php artisan serve
 ```
