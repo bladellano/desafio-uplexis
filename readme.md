@@ -45,6 +45,7 @@ C:\xampp\htdocs\app\ php artisan key:generate
 ```bash
 C:\xampp\htdocs\app\ php artisan serve
 ```
+* Usuário e senha: `admin/admin`
 ### Creditos
 Esta aplicação foi desenvolvida por [Caio Dellano Nunes da Silva](mailto:bladellano@gmail.com).
 <br>
